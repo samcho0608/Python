@@ -1,0 +1,19 @@
+Project) Image Combiner
+
+[User Scenario]
+1. User selects 1 or more images to Combine.
+2. User selects the path the combined image will be saved at.
+3. User selects width, padding, and the format.
+4. Run button starts the combining process.
+5. Close button terminates the program.
+
+[Function Details]
+1. Add : Adds the file to the listbox.
+2. Delete File : Deletes the selected file in the listbox.
+3. Find : Inserts the path selected by the user.
+4. Width : Adjusts the width of the combined image.
+5. Padding : Adjusts the padding between the images(None, Narrow, Medium, Wide).
+6. Format : Deterines the format of the image file(.png, .jpg, .bmp, etc.).
+7. Run : Begins the combining process.
+8. Progress : Shows the progress of the process.
+9. Close : Terminates the program.

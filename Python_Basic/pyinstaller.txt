@@ -1,0 +1,25 @@
+pip install pyinstaller to download the program
+
+
+man)
+    pyinstaller [option] [path to the main file]
+
+option)
+    -w : enable to program to run on the window just from clicking it 
+    -F : make one .exe file that contains all the files that would have been under dist(basically zip em into .exe)
+    --add-data src;dest' : (**replace ; with : in macOS) explicitly specifying the files that will be part of the .exe
+                            - if the src file is supposed to be in the same directory as the .exe, write ".", otherwise,
+                                write the relative path from the directory of .exe file
+    -i [icon file name] : the icon of the .exe file becomes this specific icon file(.ico)
+
+For external file usage:
+
+import os
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    
+    return os.path.join(base_path, relative_path)
