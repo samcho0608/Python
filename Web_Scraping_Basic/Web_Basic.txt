@@ -1,0 +1,11 @@
+Web Scraping : getting only desire parts of a web page
+Web page : Following the links on a page, grab all the info
+
+Web Scraping to Web page is CS31,32 Cheat Sheet to CS33 Cheat Sheet
+
+=====================================================================
+
+HTML : Structure
+CSS : Design
+JS : Functionality of a website(dynamic?); makes the website alive
+
