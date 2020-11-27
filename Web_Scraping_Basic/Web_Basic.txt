@@ -9,3 +9,17 @@ HTML : Structure
 CSS : Design
 JS : Functionality of a website(dynamic?); makes the website alive
 
+W3school to learn more abt web stuff
+
+=====================================================================
+
+We utilize HTTP protocol to request to server and get a response
+
+HTTP Method : included in the request to HTTP
+    - Get : 
+        * request written in the url, can be seen by anyone
+        * requested info(variables) are stated after ?, separated by &
+    e.g. 
+        https://www.coupang.com/np/search?q=노트북&minPrice=1000&maxPrice=100000&page=1
+    - Post : request written in the HTTP message body, cannot be seen by anyone
+

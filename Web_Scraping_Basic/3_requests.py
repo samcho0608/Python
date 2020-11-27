@@ -1,6 +1,6 @@
 import requests
 res = requests.get("http://google.com") # successful
-# res = requests.get("http://nadocoding1.tistory.com") # erroneous
+res = requests.get("http://nadocoding.tistory.com") # erroneous
 
 print("Response Code :", res.status_code) # if 200, accessed successfully
 
