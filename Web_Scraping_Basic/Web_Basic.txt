@@ -19,7 +19,10 @@ HTTP Method : included in the request to HTTP
     - Get : 
         * request written in the url, can be seen by anyone
         * requested info(variables) are stated after ?, separated by &
+        * sendable data amt limited
     e.g. 
         https://www.coupang.com/np/search?q=노트북&minPrice=1000&maxPrice=100000&page=1
-    - Post : request written in the HTTP message body, cannot be seen by anyone
+    - Post :
+        * request written in the HTTP message body, cannot be seen by anyone
+        * the data amt not limited
 
