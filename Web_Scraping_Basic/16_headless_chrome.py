@@ -1,20 +1,15 @@
 from selenium import webdriver
-browser = webdriver.Chrome()
+
+options = webdriver.ChromeOptions()
+options.headless = True             # runs chrome in the background instead of opening it on GUI
+options.add_argument("window-size=1920x1080")   # sets the size of the window
+
+browser = webdriver.Chrome(options=options)
 browser.maximize_window()
 
 # going to the page
 url = "https://play.google.com/store/movies/top"
 browser.get(url)
-
-# scroll down
-# scroll down by the height of the resolution(in my case 1080)
-# move to the position (0,1080) (0,0) is the top left
-# browser.execute_script("window.scrollTo(0, 1080)") # the second argument is the display resolution
-                                                   # in my case, it was 1920 x 1080
-# browser.execute_script("window.scrollTo(0, 2080)")
-
-# Scroll to the very bottom of the page
-# browser.execute_script("window.scrollTo(0, document.body.scrollHeight)")
 
 import time
 interval = 2 # 2 초에 한번씩 스크롤 내림
@@ -36,6 +31,7 @@ while True:
     prev_height = curr_height
 
 print("scroll finished")
+browser.get_screenshot_as_file("Web_Scraping_Basic/google_movie.png") # takes the screenshot of the page
 
 
 import requests
