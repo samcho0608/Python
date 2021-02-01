@@ -1,10 +1,13 @@
+# 계좌 신설
 def open_acc():
     print("계좌 신설!")
 
+# 입금
 def deposit(balance, money):
     print("입금 완료. 잔액: {0}원".format(balance + money))
     return balance + money
 
+# 출금
 def withdraw(balance, money):
     if balance < money:
         print("잔액 부족!")
@@ -13,6 +16,7 @@ def withdraw(balance, money):
         print("출금 완료!")
         return balance - money
 
+# 야간 출금
 def withdraw_night(balance, money):
     commission = 100
     return commission, balance - money - commission
